@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Unica+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  font-size: 16rem;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Unica One', sans-serif;
+}
