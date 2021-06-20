@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Details from './components/Details'
 import Navigation from './components/Navigation'
 import Specifications from './components/Specifications'
+import Mounting from './components/Mounting'
 import './App.css';
 
 function App() {
@@ -58,18 +59,7 @@ function App() {
       />
 
       <div id='mounting' ref={mountRef} className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Mounting/>
       </div>
       <div id='specifications' ref={specsRef} style={{height: "1500px", width: "100%"}}>
         <Specifications/>
