@@ -1,12 +1,11 @@
 import { useState, useRef, useEffect, useLayoutEffect, useCallback } from 'react'
 import useScrollPosition from '@react-hook/window-scroll'
-import logo from './logo.svg';
 import Header from './components/Header'
 import Details from './components/Details'
 import Navigation from './components/Navigation'
 import Specifications from './components/Specifications'
 import Mounting from './components/Mounting'
-import './App.css';
+import Footer from './components/Footer'
 
 function App() {
 
@@ -48,7 +47,7 @@ function App() {
   }, [scroll, scrollY, handleCheckScroll])
 
   return (
-    <div className="App">
+    <div>
       <Header/>
 
       <Details/>
@@ -58,12 +57,15 @@ function App() {
         specs={specsStatus}
       />
 
-      <div id='mounting' ref={mountRef} className="App-header">
+      <div id='mounting' ref={mountRef}>
         <Mounting/>
       </div>
-      <div id='specifications' ref={specsRef} style={{height: "1500px", width: "100%"}}>
+      
+      <div id='specifications' ref={specsRef} >
         <Specifications/>
       </div>
+
+      <Footer/>
     </div>
   );
 }
