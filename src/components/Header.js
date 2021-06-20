@@ -6,7 +6,7 @@ const Container = styled.header`
   justify-content: center;
   align-items: flex-end;
   background-color: white;
-  margin: 24px 0 8px 0;
+  margin: 2.4rem 0 0.8rem 0;
 
   img {
     width: 100px;
