@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Button from './NavBtn'
+import {Link} from 'react-scroll'
 
 const Nav = styled.nav`
   position: sticky;
@@ -22,14 +23,18 @@ export default function Navigation(props) {
   return (
     <Nav>
       <div className="container">
-        <Button
-          text="Mounting"
-          selected={props.mount}
-        />
-        <Button
-          text="Functions & Specifications"
-          selected={props.specs}
-        />
+        <Link to="mounting" spy={true} smooth={true}>
+          <Button
+            text="Mounting"
+            selected={props.mount}
+          />
+        </Link>
+        <Link to="specifications" spy={true} smooth={true}>
+          <Button
+            text="Functions & Specifications"
+            selected={props.specs}
+          />
+        </Link>
       </div>
     </Nav>
   )

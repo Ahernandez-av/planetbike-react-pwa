@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useLayoutEffect } from 'react'
+import { useState, useRef, useEffect, useLayoutEffect, useCallback } from 'react'
 import useScrollPosition from '@react-hook/window-scroll'
 import logo from './logo.svg';
 import Header from './components/Header'
@@ -12,9 +12,9 @@ function App() {
   const specsRef = useRef(null);
   const scrollY = useScrollPosition(60);
 
-  const [scroll, setScroll] = useState(scrollY);
-  const [mountY, setMountY] = useState(0);
-  const [specsY, setSpecsY] = useState(0);
+  const [scroll, setScroll] = useState(0);
+  const [mountY, setMountY] = useState(1);
+  const [specsY, setSpecsY] = useState(1);
   const [mountStatus, setMountStatus] = useState(false);
   const [specsStatus, setSpecsStatus] = useState(false);
 
@@ -24,13 +24,7 @@ function App() {
 
   }, [])
 
-  useEffect(() => {
-    setScroll(scrollY)
-    checkScroll(scroll)
-
-  }, [scroll, scrollY])
-
-  function checkScroll(scroll) {
+  const handleCheckScroll = useCallback(() => {
     console.log(`${mountY} mount y`)
 
     if(scroll >= mountY && scroll < specsY){
@@ -43,7 +37,13 @@ function App() {
       setMountStatus(false)
       setSpecsStatus(false)
     }
-  }
+  }, [mountY, specsY, scroll]);
+
+  useEffect(() => {
+    setScroll(scrollY)
+    handleCheckScroll(scroll)
+
+  }, [scroll, scrollY, handleCheckScroll])
 
   return (
     <div className="App">
@@ -56,7 +56,7 @@ function App() {
         specs={specsStatus}
       />
 
-      <div ref={mountRef} className="App-header">
+      <div id='mounting' ref={mountRef} className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -70,7 +70,7 @@ function App() {
           Learn React
         </a>
       </div>
-      <div ref={specsRef} style={{height: "500px", width: "100%"}}>
+      <div id='specifications' ref={specsRef} style={{height: "1500px", width: "100%"}}>
         Hello
       </div>
     </div>
