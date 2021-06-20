@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import Header from './components/Header'
 import Details from './components/Details'
 import Navigation from './components/Navigation'
+import Specifications from './components/Specifications'
 import './App.css';
 
 function App() {
@@ -71,7 +72,7 @@ function App() {
         </a>
       </div>
       <div id='specifications' ref={specsRef} style={{height: "1500px", width: "100%"}}>
-        Hello
+        <Specifications/>
       </div>
     </div>
   );
