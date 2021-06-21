@@ -8,6 +8,12 @@ const Segment = styled.div`
   justify-content: center;
   padding: 6.4rem 0 12.8rem 0;
 
+  @media (max-width: 800px) {
+    margin: 0;
+    padding: 6.4rem 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
   .container{
     max-width: 90rem;
     width: 100%;
@@ -17,6 +23,10 @@ const Segment = styled.div`
     .tab-list{
       display: flex;
       margin-top: 6.4rem;
+
+      @media (max-width: 800px) {
+        margin-top: 6.4rem;
+      }
     }
 
     .tab{
@@ -24,6 +34,11 @@ const Segment = styled.div`
       font-size: 2.4rem;
       padding: .8rem 1.2rem;
       margin: 0 .8rem;
+
+      @media (max-width: 800px) {
+        font-size: 1.8rem;
+        padding: .8rem;
+      }
     }
 
     .tab-selected{

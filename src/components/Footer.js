@@ -6,7 +6,6 @@ const Segment = styled.footer`
   color: #FFF;
   display: flex;
   justify-content: center;
-  margin: 6.4rem 0 12.8rem 0;
 
   .container{
     max-width: 90rem;

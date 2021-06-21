@@ -4,7 +4,7 @@ import Spec from './Specs'
 const Segment = styled.div`
 
   .image{
-    margin: 12.0rem 0;
+    margin: 6.4rem 0;
 
     img{
       width: 100%;

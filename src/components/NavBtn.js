@@ -9,6 +9,13 @@ const Btn = styled.button`
   font-size: 2.4rem;
   background-color: ${props => props.selected ? "#FFDC00" : "#333333"};
   color: ${props => props.selected ? "#111" : "#FFF"};
+
+  @media (max-width: 800px) {
+    width: 100%;
+    margin: 0 1.2rem;
+    padding: 0 1.2rem;
+    font-size: 1.8rem;
+  }
 `
 
 export default function Button(props) {

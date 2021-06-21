@@ -35,3 +35,13 @@ h2 {
 h3 {
   font-size: 4.8rem;
 }
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+}

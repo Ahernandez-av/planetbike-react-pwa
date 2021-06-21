@@ -15,6 +15,11 @@ const Segment = styled.div`
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 800px) {
+      margin: 0;
+      padding: 0 2.4rem;
+    }
+
     h2 {
       margin-bottom: 4.2rem;
     }

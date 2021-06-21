@@ -8,6 +8,11 @@ const Container = styled.header`
   background-color: white;
   margin: 2.4rem 0 0.8rem 0;
 
+  @media (max-width: 800px) {
+    width: 100%;
+    margin: 0;
+  }
+
   img {
     width: 100px;
   }

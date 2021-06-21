@@ -5,6 +5,11 @@ const Fragment = styled.div`
   width: 100%;
   margin: 4.2rem 0;
 
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin: 2.4rem 0;
+  }
+  
   .text {
     width: 50%;
     display: flex;
@@ -13,11 +18,19 @@ const Fragment = styled.div`
 
     p {
       margin-top: 2.4rem;
+
+      @media (max-width: 800px) {
+        margin: 2.4rem 0;
+      }
     }
   }
 
   .image {
     width: 50%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
 
     img {
       width: 100%;

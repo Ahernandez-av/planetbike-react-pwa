@@ -10,12 +10,22 @@ const Nav = styled.nav`
   background-color: #333333;
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid #333;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 2.4rem;
+  }
 
   .container {
     max-width: 90rem;
     width: 100%;
     display: flex;
     justify-content: flex-start;
+
+    @media (max-width: 800px) {
+      justify-content: space-evenly;
+    }
   }
 `
 
