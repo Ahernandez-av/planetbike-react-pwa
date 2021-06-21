@@ -15,6 +15,11 @@ body {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
+  Line-height: 2.4rem;
+}
+
+span {
+  font-weight: 700;
 }
 
 h1,h2,h3,h4 {
@@ -33,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
 }
 
 @media (max-width: 800px) {

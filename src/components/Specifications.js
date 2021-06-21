@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import SpecsPanel from './SpecsPanel'
-import Mode1 from '../images/specs.png'
+import Mode1 from '../images/mode-1.png'
+import Mode2 from '../images/mode-2.png'
+import Mode3 from '../images/mode-3.png'
+import Mode4 from '../images/mode-4.png'
 
 const Segment = styled.div`
   display: flex;
@@ -70,20 +73,112 @@ export default function Navigation() {
               image= {Mode1}
               features= {[ 
                 { 
-                  title: "feature Name",
-                  text: "Planet Bike wil donate 25% of our profits from this purchases and any other Planet Bike product you buy, to non-profit bicycle advocacy groups to further benefit your cycling experience."
+                  title: "Current Speed",
+                  text: "Miles or kilometers per hour | 0-99.9 mph/kph | Increments of 0.1 Mph/Kph"
+                },
+                { 
+                  title: 'Ride Time "RTM"',
+                  text: "Up to 9:59:59 | Increments of 1 second"
+                }, 
+                { 
+                  title: 'Ride Distance "DST"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 Mph/Kph"
+                },
+                { 
+                  title: 'Odometer "ODO"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 M or K (ODO= cumulative distance for BIKE 1 and BIKE 2)"
                 }
               ]}
             />
           </TabPanel>
           <TabPanel>
-            <p>Any content 2</p>
+            <SpecsPanel
+              image= {Mode2}
+              features= {[ 
+                { 
+                  title: "Current Speed",
+                  text: "Miles or kilometers per hour | 0-99.9 mph/kph | Increments of 0.1 Mph/Kph"
+                },
+                { 
+                  title: 'Ride Time "RTM"',
+                  text: "Up to 9:59:59 | Increments of 1 second"
+                }, 
+                { 
+                  title: 'Ride Distance "DST"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 Mph/Kph"
+                },
+                { 
+                  title: 'Odometer "ODO"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 M or K (ODO= cumulative distance for BIKE 1 and BIKE 2)"
+                },
+                { 
+                  title: 'Average Speed "AVS"',
+                  text: "0-99.9M mph/kph | Increments of 0.01 Mph/Kph"
+                },
+                { 
+                  title: 'Maximun Speed "Max"',
+                  text: "0-99.9M mph/kph | Increments of 0.01 Mph/Kph"
+                }
+              ]}
+            />
           </TabPanel>
           <TabPanel>
-            <p>Any content 3</p>
+            <SpecsPanel
+              image= {Mode3}
+              features= {[ 
+                { 
+                  title: "Current Speed",
+                  text: "Miles or kilometers per hour | 0-99.9 mph/kph | Increments of 0.1 Mph/Kph"
+                },
+                { 
+                  title: 'Ride Time "RTM"',
+                  text: "Up to 9:59:59 | Increments of 1 second"
+                }, 
+                { 
+                  title: 'Ride Distance "DST"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 Mph/Kph"
+                },
+                { 
+                  title: 'Odometer "ODO"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 M or K (ODO= cumulative distance for BIKE 1 and BIKE 2)"
+                },
+                { 
+                  title: 'Temperature',
+                  text: "-19 to 120 F/ -19 to 50C (Protegé 9.0 ONLY)"
+                },
+                { 
+                  title: 'Clock',
+                  text: "12 Hr format | Indicated by flashing colon"
+                }
+              ]}
+            />
           </TabPanel>
           <TabPanel>
-            <p>Any content 4</p>
+            <SpecsPanel
+              image= {Mode4}
+              features= {[ 
+                { 
+                  title: "Current Speed",
+                  text: "Miles or kilometers per hour | 0-99.9 mph/kph | Increments of 0.1 Mph/Kph"
+                },
+                { 
+                  title: 'Ride Time "RTM"',
+                  text: "Up to 9:59:59 | Increments of 1 second"
+                }, 
+                { 
+                  title: 'Ride Distance "DST"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 Mph/Kph"
+                },
+                { 
+                  title: 'Odometer "ODO"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 M or K (ODO= cumulative distance for BIKE 1 and BIKE 2)"
+                },
+                { 
+                  title: 'Bike Odometer "Bike ODO"',
+                  text: "Up to 999.9 M or K | Increments of 0.01 Mph/Kph"
+                }
+              ]}
+            />
           </TabPanel>
         </Tabs>
       </div>

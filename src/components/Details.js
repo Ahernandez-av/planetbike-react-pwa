@@ -123,7 +123,7 @@ export default function Details() {
               <img src={Protege} alt="Protegé 9.0 & 8.0 Instructions"/>
             </div>
             <p className="intro">
-            The protegé represents a breakthrought in bicycle Computer design and function. The <strong>MacroMonitor™</strong> LCD display.
+            The protegé represents a breakthrought in bicycle Computer design and function. The <span>MacroMonitor™</span> LCD display.
             </p>
           </div>
 
@@ -136,7 +136,7 @@ export default function Details() {
         
           <div className="pledge">
             <h4>Our Pledge!</h4>
-            <p>Planet Bike wil donate 25% of our profits from this purchases and any other Planet Bike product you buy, to non-profit bicycle advocacy groups to further benefit your cycling experience.</p>
+            <p><span>Planet Bike wil donate 25%</span> of our profits from this purchases and any other Planet Bike product you buy, to non-profit bicycle advocacy groups to further benefit your cycling experience.</p>
           </div>
         </div>
 

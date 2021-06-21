@@ -18,7 +18,7 @@ export default function Footer(){
   return (
     <Segment>
       <div className="container">
-        <p>Derechos reservados</p>
+        <p>@2021 Copyright | Planet Bike</p>
       </div>
     </Segment>
   )

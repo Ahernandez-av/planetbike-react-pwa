@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Fragment = styled.div`
   display: flex;
   width: 100%;
-  margin: 4.2rem 0;
+  margin: 1.8rem 0;
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -11,22 +11,23 @@ const Fragment = styled.div`
   }
   
   .text {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    p {
-      margin-top: 2.4rem;
+    h3 {
+      margin-bottom: 1.8rem;
+    }
 
-      @media (max-width: 800px) {
-        margin: 2.4rem 0;
-      }
+    p {
+      margin-bottom: 2.4rem;
     }
   }
 
   .image {
-    width: 50%;
+    width: 70%;
+    padding: 0 2.4rem;
 
     @media (max-width: 800px) {
       width: 100%;
