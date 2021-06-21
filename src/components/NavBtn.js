@@ -19,8 +19,6 @@ const Btn = styled.button`
 `
 
 export default function Button(props) {
-  
-  console.log(props.selected)
   return(
     <>
     {props.selected ? 

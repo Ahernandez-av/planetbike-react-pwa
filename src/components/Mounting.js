@@ -28,6 +28,9 @@ const Segment = styled.div`
 
     img {
       margin-bottom: 6.4rem;
+      width: 100%;
+    }
+
     }
 
     @media (max-width: 800px) {
@@ -37,6 +40,7 @@ const Segment = styled.div`
 
     h2 {
       margin-bottom: 4.2rem;
+      margin-top: 4.2rem;
     }
 
     h3 {

@@ -26,7 +26,6 @@ function App() {
   }, [])
 
   const handleCheckScroll = useCallback(() => {
-    console.log(`${mountY} mount y`)
 
     if(scroll >= mountY && scroll < specsY){
       setMountStatus(true)

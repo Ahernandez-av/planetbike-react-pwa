@@ -16,6 +16,10 @@ const Fragment = styled.div`
     flex-direction: column;
     justify-content: center;
 
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
     h3 {
       margin-bottom: 1.8rem;
     }
@@ -31,6 +35,7 @@ const Fragment = styled.div`
 
     @media (max-width: 800px) {
       width: 100%;
+      padding: 0;
     }
 
     img {
